@@ -9,7 +9,7 @@ let package = Package(
         .macOS(.v10_15)
     ],
     dependencies: [
-        .package(url: "https.github.com/p2/OAuth2.git", from: "5.3.0")
+        .package(url: "https://github.com/p2/OAuth2.git", from: "5.3.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
