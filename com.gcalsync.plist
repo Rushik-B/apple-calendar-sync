@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.gcalsync</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/gcal-sync</string>
+        <string>sync</string>
+    </array>
+    
+    <!-- Run every hour -->
+    <key>StartInterval</key>
+    <integer>3600</integer>
+    
+    <!-- Run at load -->
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <!-- Keep alive only for successful exit -->
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+    
+    <!-- Log files -->
+    <key>StandardOutPath</key>
+    <string>/tmp/gcal-sync.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>/tmp/gcal-sync.error.log</string>
+    
+    <!-- Working directory -->
+    <key>WorkingDirectory</key>
+    <string>/Users/Rushik</string>
+    
+    <!-- Environment variables -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+</dict>
+</plist> 
